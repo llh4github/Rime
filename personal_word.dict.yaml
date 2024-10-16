@@ -1,0 +1,22 @@
+name: personal_word
+version: "1.0"
+sort: by_weight
+use_preset_vocabulary: false
+columns:
+  - text
+  - weight
+  - code
+  - stem
+encoder:
+  rules:
+    - length_equal: 2
+      formula: "AaAbBaBb"
+    - length_equal: 3
+      formula: "AaBaCaCb"
+    - length_in_range: [4, 99]
+      formula: "AaBaCaZa"
+...
+# 注意分隔符是tab，不是空格.
+# 如果启用了emoji，且要调整自定义词跟emoji出现顺序则要在`opencc/emoji.txt`修改
+
+lilihong_coding@foxmail.com	880	dtre

@@ -15,6 +15,7 @@ encoder:
     - length_in_range: [4, 10]
       formula: "AaBaCaZa"
 import_tables:
+  - personal_word
   - tigress_ci
   - tigress_simp_ci
 ...
