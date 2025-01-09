@@ -1,5 +1,5 @@
 -- 处理vim回普通模式的快捷键
--- vim 回普通模式时 切为英文状态
+-- vim 回普通模式时 切为英文状态，会清空rime的输入内容
 -- 只处理了 ctrl [  组合键
 local handle_ctrl_bracket_processor = {}
 
