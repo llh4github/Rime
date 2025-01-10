@@ -6,3 +6,4 @@ lua_unicode_display_filter = require("unicode_display")  --Unicode编码提示
 calculator_translator = require("calculator_translator")  --简易计算器
 -- exe_processor = require("exe")  -- 网页启动器
 shijian2_translator = require("shijian2") -- 高级时间
+handle_ctrl_bracket_processor = require("handle_ctrl_bracket_processor") --处理vim回普通模式的快捷键

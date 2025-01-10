@@ -14,7 +14,8 @@ function handle_ctrl_bracket_processor.func(key, env)
     if (key:repr() == "Control+bracketleft" and (not is_ascii_mode)) then
         ctx:set_option("ascii_mode", true)
         -- 清空输入内容
-        env.engine:commit_text()
+        -- env.engine:clear()
+        ctx.input = ''
         return 1 -- 表示已处理
     end
     return 2     -- 表示未处理
