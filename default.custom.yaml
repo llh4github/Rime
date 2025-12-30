@@ -18,4 +18,5 @@ patch:
     - {schema: tiger}
   "switcher/hotkeys":
     - "Control+grave"
-    - "Control+F8"
+    # - "Control+F8"
+
