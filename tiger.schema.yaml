@@ -109,7 +109,7 @@ engine:
     - uniquifier #过滤重复
 
 speller:
-  auto_clear: auth # 3种选择， manual|auto|max_length 空码按下一键确认清屏|空码自动清|达到最长码时后码顶上清屏
+  auto_clear: auto # 3种选择， manual|auto|max_length 空码按下一键确认清屏|空码自动清|达到最长码时后码顶上清屏
   auto_select: true
   max_code_length: 4
   alphabet: "/;'zyxwvutsrqponmlkjihgfedcba"
