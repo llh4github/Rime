@@ -27,7 +27,7 @@ switches: # 0 默认关，1 默认开
     reset: 1
     states: [ 🈚, 🈶 ]
   - name: chaifen
-    reset: 1 
+    reset: 1
     states: [ 拆隐, 拆显 ]
   # - options: [ gb2312, gbk, utf8 ]
   #   states: [ gb2312, GBK, UTF-8 ]
@@ -39,7 +39,7 @@ switches: # 0 默认关，1 默认开
     reset: 0
     states: [ 有刻, 半刻, 无刻 ]
   - name: charset_comment_filter  #字符集提示
-    reset: 0  
+    reset: 0
     states: [ U区关, U区开 ]
   - name: udpf_switch
     reset: 0
@@ -109,10 +109,10 @@ engine:
     - uniquifier #过滤重复
 
 speller:
-  auto_clear: max_length # 3种选择， manual|auto|max_length 空码按下一键确认清屏|空码自动清|达到最长码时后码顶上清屏
+  auto_clear: auto # 3种选择， manual|auto|max_length 空码按下一键确认清屏|空码自动清|达到最长码时后码顶上清屏
   auto_select: true
   max_code_length: 4
-  alphabet: "[;'zyxwvutsrqponmlkjihgfedcba]"
+  alphabet: "/;'zyxwvutsrqponmlkjihgfedcba"
   # initials: "abcdefghijklmnopqrstuvwxyz;'"
   auto_select_pattern: ^;\w+ #自动上屏规则  对 [;] 引导的编码实行候选唯一自动上屏
   # 若要添加四码上屏功能，在  ^;\w+ 后面 加上  |^\w{4}$  即可
@@ -271,10 +271,10 @@ easy_english:
 chaifen:
   opencc_config: hu_cf.json
   option_name: chaifen
-  show_in_comment: true 
-  comment_format:     
+  show_in_comment: true
+  comment_format:
     - "xform/&nbsp;/ /"
-  tags:     
+  tags:
     - abc
     - tiger
     - tigress
